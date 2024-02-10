@@ -1,5 +1,5 @@
 {
   "scripts": {
-    "serv": " http-server -c-1"
+    "serv": " http-server ./ -c-1"
   }
 }
