@@ -1,16 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="font-default">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Внесение ПО в реестр Отечественного программного обеспечения</title>
+    <link rel="stylesheet" type="text/css" href="index.css" media="screen" />
   </head>
   <body>
     <main>
+      <h1 class="title title_type_h1">
+        Внесение ПО в реестр Отечественного программного обеспечения
+      </h1>
       <section>
-        <h1>Внесение ПО в реестр Отечественного программного обеспечения</h1>
-        <h2>Получите преимущества:</h2>
-        <ul>
+        <h2 class="title" class="title">Получите преимущества:</h2>
+        <ul class="list">
           <li>налоговые льготы</li>
           <li>грантовую государственную поддержку</li>
           <li>
@@ -18,18 +21,50 @@
           </li>
         </ul>
         <nav>
-          <ul>
-            <li><a href="#todo">Что делаем</a></li>
-            <li><a href="#plan">План действий</a></li>
-            <li><a href="#price">Цены</a></li>
-            <li><a href="#contacts">Контакты</a></li>
-            <li><a href="#feedback">Отзывы</a></li>
+          <ul class="list navigation">
+            <li class="navigation__element">
+              <a class="navigation__element-link" href="#todo">
+                <div class="navigation__element-container">
+                  Что делаем<span class="navigation__element-arrow">></span>
+                </div></a
+              >
+            </li>
+            <li class="navigation__element">
+              <a class="navigation__element-link" href="#plan">
+                <div class="navigation__element-container">
+                  План действий<span class="navigation__element-arrow">></span>
+                </div></a
+              >
+            </li>
+            <li class="navigation__element">
+              <a class="navigation__element-link" href="#price">
+                <div class="navigation__element-container">
+                  Цены<span class="navigation__element-arrow">></span>
+                </div></a
+              >
+            </li>
+            <li class="navigation__element">
+              <a class="navigation__element-link" href="#contacts">
+                <div class="navigation__element-container">
+                  Контакты <span class="navigation__element-arrow">></span>
+                </div></a
+              >
+            </li>
+            <li class="navigation__element">
+              <a class="navigation__element-link" href="#feedback">
+                <div class="navigation__element-container">
+                  Отзывы
+                  <span class="navigation__element-arrow">></span>
+                </div></a
+              >
+            </li>
           </ul>
         </nav>
       </section>
+      <hr />
       <section id="todo">
-        <h2>Что сделаем</h2>
-        <ol>
+        <h2 class="title">Что сделаем</h2>
+        <ol class="list list_type_numbered">
           <li>
             Расскажем как происходит включение в реестр: порядок, сроки,
             требования, документы.
@@ -45,9 +80,10 @@
           <li>Возьмем на себя всю коммуникацию с представителями Реестра.</li>
         </ol>
       </section>
+      <hr />
       <section id="plan">
-        <h2>План действий</h2>
-        <ol>
+        <h2 class="title">План действий</h2>
+        <ol class="list list_type_numbered">
           <li>
             Свяжитесь с нами. Расскажите о вашем ПО. Мы расскажем как происходит
             процедура регистрации.
@@ -100,9 +136,10 @@
           </li>
         </ol>
       </section>
+      <hr />
       <section id="price">
-        <h2>Цены</h2>
-        <ol>
+        <h2 class="title">Цены</h2>
+        <ol class="list list_type_numbered">
           <li>
             Консультация, инструктаж по сбору документов и справок, подготовке
             проверочного экземпляра.
@@ -123,16 +160,26 @@
           рублей.
         </p>
       </section>
+      <hr />
       <section id="contacts">
-        <h2>Контакты</h2>
-        <img src="./Contacts.jpg" alt="Девушка в деловом стиле" />
-        <a href="tg://resolve?domain=RomanRysev"
-          >Оставьте свою заявку в Telegram</a
-        >
-        <a href="mailto:valibyk@gmail.com">или на почту</a
-        ><!--https://t.me/RomanRysev-->
+        <h2 class="title">Контакты</h2>
+        <div class="two-columns">
+          <img
+            class="contacts__photo"
+            src="./Contacts.jpg"
+            alt="Девушка в деловом стиле"
+          />
+          <div class="contacts__right">
+            <span>
+              Оставьте свою заявку в Telegram
+              <a href="tg://resolve?domain=AlinaRyseva">@AlinaRyseva</a></span
+            >
+            <a href="mailto:valibyk@gmail.com">или на почту</a>
+          </div>
+        </div>
       </section>
-      <section id="feedback"><h2>Отзывы</h2></section>
+      <hr />
+      <section id="feedback"><h2 class="title">Отзывы</h2></section>
     </main>
   </body>
 </html>

@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  padding: 0 10%;
+  background-image: url("./circles-background.jpg");
+}
+
+.font-default {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #878787;
+}
+
+.title {
+  font-size: 24px;
+  color: black;
+}
+
+.title_type_h1 {
+  font-size: 32px;
+  margin-bottom: 32px;
+}
+
+.list {
+  list-style-type: none;
+  counter-reset: item;
+}
+
+.list_type_numbered li:before {
+  content: "0" counter(item) " ";
+  counter-increment: item;
+  color: #dc3f3f;
+  font-size: 24px;
+}
+
+.navigation {
+  display: flex;
+  margin-top: 32px;
+  justify-content: center;
+}
+
+.navigation__element {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 150px;
+  height: 150px;
+  margin: 0 -15px;
+}
+
+.navigation__element-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 130px;
+  height: 130px;
+}
+
+.navigation__element:nth-child(1) .navigation__element-container {
+  background-color: rgba(240, 164, 23, 0.5);
+}
+.navigation__element:nth-child(2) .navigation__element-container {
+  background-color: rgba(194, 121, 194, 0.5);
+}
+.navigation__element:nth-child(3) .navigation__element-container {
+  background-color: rgba(37, 145, 139, 0.5);
+}
+.navigation__element:nth-child(4) .navigation__element-container {
+  background-color: rgba(202, 89, 89, 0.5);
+}
+.navigation__element:nth-child(5) .navigation__element-container {
+  background-color: rgba(101, 201, 101, 0.5);
+}
+
+.navigation__element-container:hover {
+  width: 150px;
+  height: 150px;
+}
+
+.navigation__element-link {
+  text-decoration: none;
+  color: white;
+}
+
+.navigation__element-arrow {
+  transform: rotate(90deg);
+  font-size: 24px;
+  margin-bottom: -24px;
+}
+
+.contacts__photo {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.contacts__right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contacts__right a {
+  text-decoration: none;
+  color: rgb(75, 73, 201);
+  font-size: 24px;
+}
+
+section {
+  margin: 64px 0;
+  padding-left: 64px;
+}
+
+.two-columns {
+  display: flex;
+}
+
+.two-columns div {
+  margin: 0 32px;
+}
