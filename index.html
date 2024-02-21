@@ -5,94 +5,116 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Внесение ПО в реестр Отечественного программного обеспечения</title>
     <link rel="stylesheet" type="text/css" href="index.css" media="screen" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <main>
-      <h1 class="title title_type_h1">
-        Внесение ПО в реестр Отечественного программного обеспечения
-      </h1>
-      <section>
-        <h2 class="title" class="title">Получите преимущества:</h2>
-        <ul class="list">
-          <li>налоговые льготы</li>
-          <li>грантовую государственную поддержку</li>
-          <li>
-            возможность участвовать в государственных и муниципальных закупках. 
-          </li>
-        </ul>
-        <nav>
-          <ul class="list navigation">
+      <section class="main-screen-section">
+        <h1 class="title title_type_h1">
+          <span class="selected-text">Внесение ПО в реестр</span>
+          <span class="selected-text">Отечественного программного</span>
+          <span class="selected-text">обеспечения</span>
+        </h1>
+        <div class="advantages">
+          <h2 class="title" class="title">Получите преимущества:</h2>
+          <ul class="list">
+            <li>налоговые льготы</li>
+            <li>грантовую государственную поддержку</li>
+            <li>
+              возможность участвовать в государственных и муниципальных
+              закупках. 
+            </li>
+          </ul>
+        </div>
+        <img class="main-screen-section__photo" src="./sc3.png" alt="screen" />
+        <nav class="navigation">
+          <!--<div class="circle-box">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>-->
+          <ul class="list">
             <li class="navigation__element">
-              <a class="navigation__element-link" href="#todo">
-                <div class="navigation__element-container">
-                  Что делаем<span class="navigation__element-arrow">></span>
-                </div></a
-              >
+              <a class="navigation__element-link" href="#todo"> Что делаем</a>
             </li>
             <li class="navigation__element">
               <a class="navigation__element-link" href="#plan">
-                <div class="navigation__element-container">
-                  План действий<span class="navigation__element-arrow">></span>
-                </div></a
-              >
+                План действий
+              </a>
             </li>
             <li class="navigation__element">
-              <a class="navigation__element-link" href="#price">
-                <div class="navigation__element-container">
-                  Цены<span class="navigation__element-arrow">></span>
-                </div></a
-              >
+              <a class="navigation__element-link" href="#price"> Цены</a>
             </li>
             <li class="navigation__element">
-              <a class="navigation__element-link" href="#contacts">
-                <div class="navigation__element-container">
-                  Контакты <span class="navigation__element-arrow">></span>
-                </div></a
-              >
+              <a class="navigation__element-link" href="#contacts"> Контакты</a>
             </li>
             <li class="navigation__element">
-              <a class="navigation__element-link" href="#feedback">
-                <div class="navigation__element-container">
-                  Отзывы
-                  <span class="navigation__element-arrow">></span>
-                </div></a
-              >
+              <a class="navigation__element-link" href="#feedback"> Отзывы</a>
             </li>
           </ul>
+          <div>
+            <a href="tg://resolve?domain=AlinaRyseva">
+              <img src="./Logo.svg" alt="Telegram"
+            /></a>
+            <a class="navigation__icon" href="mailto:valibyk@gmail.com">
+              <img src="./email.svg" alt="Telegram"
+            /></a>
+          </div>
+          <!-- <div class="circle-box">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>-->
         </nav>
       </section>
       <hr />
       <section id="todo">
-        <h2 class="title">Что сделаем</h2>
+        <h2 class="title selected-text">Что сделаем</h2>
         <ol class="list list_type_numbered">
           <li>
+            <span class="list_type_numbered__list-number">1</span>
             Расскажем как происходит включение в реестр: порядок, сроки,
             требования, документы.
           </li>
           <li>
+            <span class="list_type_numbered__list-number">2</span>
             Проведем проверку вашей документации на соответствие требованиям.
             Укажем на проблемные моменты, исправим или дополним. Если у вас нет
             документации, то часть документации мы подготовим самостоятельно. А
             часть подготовим по дополнительной оплате (в зависимости от
             сложности ПО).
           </li>
-          <li>Подготовим и направим заявление.</li>
-          <li>Возьмем на себя всю коммуникацию с представителями Реестра.</li>
+          <li>
+            <span class="list_type_numbered__list-number">3</span>
+            Подготовим и направим заявление.
+          </li>
+          <li>
+            <span class="list_type_numbered__list-number">4</span>Возьмем на
+            себя всю коммуникацию с представителями Реестра.
+          </li>
         </ol>
       </section>
       <hr />
       <section id="plan">
-        <h2 class="title">План действий</h2>
+        <h2 class="title selected-text">План действий</h2>
         <ol class="list list_type_numbered">
           <li>
+            <span class="list_type_numbered__list-number">1</span>
             Свяжитесь с нами. Расскажите о вашем ПО. Мы расскажем как происходит
             процедура регистрации.
           </li>
           <li>
+            <span class="list_type_numbered__list-number">2</span>
             Проверка технического соответствия ПО. Мы расскажем какие
             технические требования к ПО для включения в реестр.
           </li>
           <li>
+            <span class="list_type_numbered__list-number">3</span>
             Сбор информации о ПО и необходимых документов. - Вы заполняете
             анкету с информацией о ПО (используемые технологии, цели, задачи,
             требования к установке и прочее); - Мы подскажем и при необходимости
@@ -101,6 +123,7 @@
             предоставить.
           </li>
           <li>
+            <span class="list_type_numbered__list-number">4</span>
             Подготовка документации. - Если документация есть: мы проверим на
             соответствие требованиям Минцифр, при необходимости поправим и
             дополним; - Если документации нет: мы подготовим описание процессов
@@ -111,25 +134,30 @@
             зависит от сложности вашего ПО, средняя стоимость 15 000 рублей).
           </li>
           <li>
+            <span class="list_type_numbered__list-number">5</span>
             Подготовка проверочного экземпляра. - Мы подскажем как подготовить
             проверочный экземпляр; - Вам необходимо подготовить инструкцию по
             установке ПО.
           </li>
           <li>
+            <span class="list_type_numbered__list-number">6</span>
             Подача заявления. - Мы подаем заявление и весь пакет документов.
           </li>
           <li>
+            <span class="list_type_numbered__list-number">7</span>
             Регистрация заявления. - Минцифры проверяет полноту предоставленных
             документов; - Мы отслеживаем статус заявления и при необходимости
             вносим правки.
           </li>
           <li>
+            <span class="list_type_numbered__list-number">8</span>
             Экспертная оценка. - Экспертная комиссия изучает предоставленный
             экземпляр ПО; - Мы отслеживаем статус, при необходимости отвечаем на
             вопросы или организовываем демонстрацию вашего ПО. Участвуем в
             демонстрации в качестве модератора.
           </li>
           <li>
+            <span class="list_type_numbered__list-number">9</span>
             Принятие решения. - экспертная комиссия выносит решение и уведомляет
             заявителя. Общий срок включения в реестр – до 45 рабочих дней со дня
             регистрации заявления.
@@ -138,31 +166,45 @@
       </section>
       <hr />
       <section id="price">
-        <h2 class="title">Цены</h2>
+        <h2 class="title selected-text">Цены</h2>
         <ol class="list list_type_numbered">
           <li>
+            <span class="list_type_numbered__list-number">1</span>
             Консультация, инструктаж по сбору документов и справок, подготовке
             проверочного экземпляра.
           </li>
-          <li>Проверка документации, при необходимости правка.</li>
           <li>
+            <span class="list_type_numbered__list-number">2</span>Проверка
+            документации, при необходимости правка.
+          </li>
+          <li>
+            <span class="list_type_numbered__list-number">3</span>
             Частичная подготовка документации (описание процессов обеспечивающих
             поддержание жизненного цикла ПО).
           </li>
-          <li>Подготовка и подача заявления и пакета документов.</li>
-          <li>Коммуникация с представителями реестра.</li>
-          <li>Организация демонстрации ПО (при необходимости)</li>
+          <li>
+            <span class="list_type_numbered__list-number">4</span>Подготовка и
+            подача заявления и пакета документов.
+          </li>
+          <li>
+            <span class="list_type_numbered__list-number">5</span>Коммуникация с
+            представителями реестра.
+          </li>
+          <li>
+            <span class="list_type_numbered__list-number">6</span>Организация
+            демонстрации ПО (при необходимости)
+          </li>
+          <li>
+            <span class="list_type_numbered__list-number">7</span> Мы можем
+            подготовить для вас описание функциональных характеристик. Стоимость
+            зависит от сложности вашего ПО. (В среднем + 15 000 рублей).
+          </li>
         </ol>
-        <span>50 000 рублей</span>
-        <p>
-          Мы можем подготовить для вас описание функциональных характеристик.
-          Стоимость зависит от сложности вашего ПО, средняя стоимость 15 000
-          рублей.
-        </p>
+        <span class="price selected-text">Итого: 50 000 рублей</span>
       </section>
       <hr />
       <section id="contacts">
-        <h2 class="title">Контакты</h2>
+        <h2 class="title selected-text">Контакты</h2>
         <div class="two-columns">
           <img
             class="contacts__photo"
@@ -180,7 +222,7 @@
       </section>
       <hr />
       <section id="feedback" class="feedback">
-        <h2 class="title">Отзывы</h2>
+        <h2 class="title selected-text">Отзывы</h2>
         <div class="feedback__container">
           <img
             class="feedback__image"
