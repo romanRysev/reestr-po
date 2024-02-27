@@ -15,7 +15,7 @@
   <body>
     <main>
       <section class="main-screen-section">
-        <h1 class="title title_type_h1">
+        <h1 class="title main-screen-section__title">
           <span class="selected-text">Внесение ПО в реестр</span>
           <span class="selected-text">Отечественного программного</span>
           <span class="selected-text">обеспечения</span>
@@ -33,11 +33,6 @@
         </div>
         <img class="main-screen-section__photo" src="./sc3.png" alt="screen" />
         <nav class="navigation">
-          <!--<div class="circle-box">
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-          </div>-->
           <ul class="list">
             <li class="navigation__element">
               <a class="navigation__element-link" href="#todo"> Что делаем</a>
@@ -65,139 +60,162 @@
               <img src="./email.svg" alt="Telegram"
             /></a>
           </div>
-          <!-- <div class="circle-box">
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-          </div>-->
         </nav>
       </section>
       <hr />
       <section id="todo">
         <h2 class="title selected-text">Что сделаем</h2>
-        <ol class="list list_type_numbered">
+        <ul class="">
           <li>
-            <span class="list_type_numbered__list-number">1</span>
             Расскажем как происходит включение в реестр: порядок, сроки,
             требования, документы.
           </li>
           <li>
-            <span class="list_type_numbered__list-number">2</span>
             Проведем проверку вашей документации на соответствие требованиям.
             Укажем на проблемные моменты, исправим или дополним. Если у вас нет
             документации, то часть документации мы подготовим самостоятельно. А
             часть подготовим по дополнительной оплате (в зависимости от
             сложности ПО).
           </li>
-          <li>
-            <span class="list_type_numbered__list-number">3</span>
-            Подготовим и направим заявление.
-          </li>
-          <li>
-            <span class="list_type_numbered__list-number">4</span>Возьмем на
-            себя всю коммуникацию с представителями Реестра.
-          </li>
-        </ol>
+          <li>Подготовим и направим заявление.</li>
+          <li>Возьмем на себя всю коммуникацию с представителями Реестра.</li>
+        </ul>
       </section>
       <hr />
       <section id="plan">
         <h2 class="title selected-text">План действий</h2>
-        <ol class="list list_type_numbered">
-          <li>
-            <span class="list_type_numbered__list-number">1</span>
-            Свяжитесь с нами. Расскажите о вашем ПО. Мы расскажем как происходит
-            процедура регистрации.
-          </li>
-          <li>
-            <span class="list_type_numbered__list-number">2</span>
-            Проверка технического соответствия ПО. Мы расскажем какие
-            технические требования к ПО для включения в реестр.
-          </li>
-          <li>
-            <span class="list_type_numbered__list-number">3</span>
-            Сбор информации о ПО и необходимых документов. - Вы заполняете
-            анкету с информацией о ПО (используемые технологии, цели, задачи,
-            требования к установке и прочее); - Мы подскажем и при необходимости
-            покажем какие юридические документы необходимо вам подготовить. - Мы
-            подскажем и покажем какие дополнительные документы необходимо
-            предоставить.
-          </li>
-          <li>
-            <span class="list_type_numbered__list-number">4</span>
-            Подготовка документации. - Если документация есть: мы проверим на
-            соответствие требованиям Минцифр, при необходимости поправим и
-            дополним; - Если документации нет: мы подготовим описание процессов
-            обеспечивающих поддержание жизненного цикла ПО и расскажем как
-            подготовить описание функциональных характеристик и инструкцию по
-            эксплуатации. (По договоренности и дополнительной оплате, мы можем
-            подготовить за вас описание функциональных характеристик. Стоимость
-            зависит от сложности вашего ПО, средняя стоимость 15 000 рублей).
-          </li>
-          <li>
-            <span class="list_type_numbered__list-number">5</span>
-            Подготовка проверочного экземпляра. - Мы подскажем как подготовить
-            проверочный экземпляр; - Вам необходимо подготовить инструкцию по
-            установке ПО.
-          </li>
-          <li>
-            <span class="list_type_numbered__list-number">6</span>
-            Подача заявления. - Мы подаем заявление и весь пакет документов.
-          </li>
-          <li>
-            <span class="list_type_numbered__list-number">7</span>
-            Регистрация заявления. - Минцифры проверяет полноту предоставленных
-            документов; - Мы отслеживаем статус заявления и при необходимости
-            вносим правки.
-          </li>
-          <li>
-            <span class="list_type_numbered__list-number">8</span>
-            Экспертная оценка. - Экспертная комиссия изучает предоставленный
-            экземпляр ПО; - Мы отслеживаем статус, при необходимости отвечаем на
-            вопросы или организовываем демонстрацию вашего ПО. Участвуем в
-            демонстрации в качестве модератора.
-          </li>
-          <li>
-            <span class="list_type_numbered__list-number">9</span>
-            Принятие решения. - экспертная комиссия выносит решение и уведомляет
-            заявителя. Общий срок включения в реестр – до 45 рабочих дней со дня
-            регистрации заявления.
-          </li>
-        </ol>
+        <div class="plan">
+          <div class="plan__steps">
+            <span class="plan__steps-divider plan__steps-divider_short"></span>
+            <span class="plan__step">1</span>
+            <span class="plan__steps-divider"></span>
+            <span class="plan__step">2</span>
+            <span class="plan__steps-divider"></span>
+            <span class="plan__step">3</span>
+            <span class="plan__steps-divider"></span>
+            <span class="plan__step">4</span>
+            <span class="plan__steps-divider"></span>
+            <span class="plan__steps-divider plan__steps-divider_short"></span>
+            <span class="plan__step">5</span>
+            <span class="plan__steps-divider"></span>
+            <span class="plan__step">6</span>
+            <span class="plan__steps-divider"></span>
+            <span class="plan__step">7</span>
+            <span class="plan__steps-divider"></span>
+            <span class="plan__step">8</span>
+            <span class="plan__steps-divider"></span>
+            <span class="plan__step">9</span>
+          </div>
+
+          <ol class="list list_type_numbered">
+            <li>
+              <div class="list_type_numbered__title">Свяжитесь с нами.</div>
+              <div class="list_type_numbered__text">
+                Расскажите о вашем ПО. Мы расскажем как происходит процедура
+                регистрации.
+              </div>
+            </li>
+            <li>
+              <div class="list_type_numbered__title">
+                Проверка технического соответствия ПО.
+              </div>
+              <div class="list_type_numbered__text">
+                Мы расскажем какие технические требования к ПО для включения в
+                реестр.
+              </div>
+            </li>
+            <li>
+              <div class="list_type_numbered__title">
+                Сбор информации о ПО и необходимых документов.
+              </div>
+              <div class="list_type_numbered__text">
+                Вы заполняете анкету с информацией о ПО (используемые
+                технологии, цели, задачи, требования к установке и прочее); - Мы
+                подскажем и при необходимости покажем какие юридические
+                документы необходимо вам подготовить. - Мы подскажем и покажем
+                какие дополнительные документы необходимо предоставить.
+              </div>
+            </li>
+            <li class="long">
+              <div class="list_type_numbered__title">
+                Подготовка документации.
+              </div>
+              <div class="list_type_numbered__text">
+                Если документация есть: мы проверим на соответствие требованиям
+                Минцифр, при необходимости поправим и дополним; - Если
+                документации нет: мы подготовим описание процессов
+                обеспечивающих поддержание жизненного цикла ПО и расскажем как
+                подготовить описание функциональных характеристик и инструкцию
+                по эксплуатации. (По договоренности и дополнительной оплате, мы
+                можем подготовить за вас описание функциональных характеристик.
+                Стоимость зависит от сложности вашего ПО, средняя стоимость 15
+                000 рублей).
+              </div>
+            </li>
+            <li>
+              <div class="list_type_numbered__title">
+                Подготовка проверочного экземпляра.
+              </div>
+              <div class="list_type_numbered__text">
+                Мы подскажем как подготовить проверочный экземпляр; - Вам
+                необходимо подготовить инструкцию по установке ПО.
+              </div>
+            </li>
+            <li>
+              <div class="list_type_numbered__title">Подача заявления.</div>
+              <div class="list_type_numbered__text">
+                Мы подаем заявление и весь пакет документов.
+              </div>
+            </li>
+            <li>
+              <div class="list_type_numbered__title">
+                Регистрация заявления.
+              </div>
+              <div class="list_type_numbered__text">
+                Минцифры проверяет полноту предоставленных документов; - Мы
+                отслеживаем статус заявления и при необходимости вносим правки.
+              </div>
+            </li>
+            <li>
+              <div class="list_type_numbered__title">Экспертная оценка.</div>
+              <div class="list_type_numbered__text">
+                Экспертная комиссия изучает предоставленный экземпляр ПО Мы
+                отслеживаем статус, при необходимости отвечаем на вопросы или
+                организовываем демонстрацию вашего ПО. Участвуем в демонстрации
+                в качестве модератора.
+              </div>
+            </li>
+            <li>
+              <div class="list_type_numbered__title">Принятие решения.</div>
+              <div class="list_type_numbered__text">
+                экспертная комиссия выносит решение и уведомляет заявителя.
+                Общий срок включения в реестр – до 45 рабочих дней со дня
+                регистрации заявления.
+              </div>
+            </li>
+          </ol>
+        </div>
       </section>
       <hr />
       <section id="price">
         <h2 class="title selected-text">Цены</h2>
-        <ol class="list list_type_numbered">
+        <ol class="">
           <li>
-            <span class="list_type_numbered__list-number">1</span>
             Консультация, инструктаж по сбору документов и справок, подготовке
             проверочного экземпляра.
           </li>
+          <li>Проверка документации, при необходимости правка.</li>
           <li>
-            <span class="list_type_numbered__list-number">2</span>Проверка
-            документации, при необходимости правка.
-          </li>
-          <li>
-            <span class="list_type_numbered__list-number">3</span>
             Частичная подготовка документации (описание процессов обеспечивающих
             поддержание жизненного цикла ПО).
           </li>
+          <li>Подготовка и подача заявления и пакета документов.</li>
+          <li>Коммуникация с представителями реестра.</li>
+          <li>Организация демонстрации ПО (при необходимости)</li>
           <li>
-            <span class="list_type_numbered__list-number">4</span>Подготовка и
-            подача заявления и пакета документов.
-          </li>
-          <li>
-            <span class="list_type_numbered__list-number">5</span>Коммуникация с
-            представителями реестра.
-          </li>
-          <li>
-            <span class="list_type_numbered__list-number">6</span>Организация
-            демонстрации ПО (при необходимости)
-          </li>
-          <li>
-            <span class="list_type_numbered__list-number">7</span> Мы можем
-            подготовить для вас описание функциональных характеристик. Стоимость
-            зависит от сложности вашего ПО. (В среднем + 15 000 рублей).
+            Мы можем подготовить для вас описание функциональных характеристик.
+            Стоимость зависит от сложности вашего ПО. (В среднем + 15 000
+            рублей).
           </li>
         </ol>
         <span class="price selected-text">Итого: 50 000 рублей</span>
@@ -205,7 +223,7 @@
       <hr />
       <section id="contacts">
         <h2 class="title selected-text">Контакты</h2>
-        <div class="two-columns">
+        <div class="contacts__container">
           <img
             class="contacts__photo"
             src="./Contacts.jpg"
