@@ -85,7 +85,8 @@
       <section id="plan">
         <h2 class="title selected-text">План действий</h2>
         <div class="plan">
-          <div class="plan__steps">
+          <div class="list_type_numbered__vertical-divider"></div>
+          <!--<div class="plan__steps">
             <span class="plan__steps-divider plan__steps-divider_short"></span>
             <span class="plan__step">1</span>
             <span class="plan__steps-divider"></span>
@@ -105,11 +106,18 @@
             <span class="plan__step">8</span>
             <span class="plan__steps-divider"></span>
             <span class="plan__step">9</span>
-          </div>
+          </div>-->
 
           <ol class="list list_type_numbered">
             <li>
-              <div class="list_type_numbered__title">Свяжитесь с нами.</div>
+              <div class="list_type_numbered__title">
+                Свяжитесь с нами.
+                <img
+                  class="list_type_numbered__title-icon"
+                  src="./contact.svg"
+                  alt=""
+                />
+              </div>
               <div class="list_type_numbered__text">
                 Расскажите о вашем ПО. Мы расскажем как происходит процедура
                 регистрации.
@@ -118,6 +126,11 @@
             <li>
               <div class="list_type_numbered__title">
                 Проверка технического соответствия ПО.
+                <img
+                  class="list_type_numbered__title-icon"
+                  src="./check.svg"
+                  alt=""
+                />
               </div>
               <div class="list_type_numbered__text">
                 Мы расскажем какие технические требования к ПО для включения в
@@ -127,6 +140,11 @@
             <li>
               <div class="list_type_numbered__title">
                 Сбор информации о ПО и необходимых документов.
+                <img
+                  class="list_type_numbered__title-icon"
+                  src="./doc.svg"
+                  alt=""
+                />
               </div>
               <div class="list_type_numbered__text">
                 Вы заполняете анкету с информацией о ПО (используемые
@@ -139,6 +157,11 @@
             <li class="long">
               <div class="list_type_numbered__title">
                 Подготовка документации.
+                <img
+                  class="list_type_numbered__title-icon"
+                  src="./edit_document_FILL0_wght400_GRAD0_opsz24.svg"
+                  alt=""
+                />
               </div>
               <div class="list_type_numbered__text">
                 Если документация есть: мы проверим на соответствие требованиям
@@ -155,6 +178,11 @@
             <li>
               <div class="list_type_numbered__title">
                 Подготовка проверочного экземпляра.
+                <img
+                  class="list_type_numbered__title-icon"
+                  src="./dvr_FILL0_wght400_GRAD0_opsz24.svg"
+                  alt=""
+                />
               </div>
               <div class="list_type_numbered__text">
                 Мы подскажем как подготовить проверочный экземпляр; - Вам
@@ -162,7 +190,14 @@
               </div>
             </li>
             <li>
-              <div class="list_type_numbered__title">Подача заявления.</div>
+              <div class="list_type_numbered__title">
+                Подача заявления.
+                <img
+                  class="list_type_numbered__title-icon"
+                  src="./content_paste_go_FILL0_wght400_GRAD0_opsz24.svg"
+                  alt=""
+                />
+              </div>
               <div class="list_type_numbered__text">
                 Мы подаем заявление и весь пакет документов.
               </div>
@@ -170,6 +205,11 @@
             <li>
               <div class="list_type_numbered__title">
                 Регистрация заявления.
+                <img
+                  class="list_type_numbered__title-icon"
+                  src="./task_FILL0_wght400_GRAD0_opsz24.svg"
+                  alt=""
+                />
               </div>
               <div class="list_type_numbered__text">
                 Минцифры проверяет полноту предоставленных документов; - Мы
@@ -177,7 +217,14 @@
               </div>
             </li>
             <li>
-              <div class="list_type_numbered__title">Экспертная оценка.</div>
+              <div class="list_type_numbered__title">
+                Экспертная оценка.
+                <img
+                  class="list_type_numbered__title-icon"
+                  src="./groups_FILL0_wght400_GRAD0_opsz24.svg"
+                  alt=""
+                />
+              </div>
               <div class="list_type_numbered__text">
                 Экспертная комиссия изучает предоставленный экземпляр ПО Мы
                 отслеживаем статус, при необходимости отвечаем на вопросы или
@@ -186,7 +233,14 @@
               </div>
             </li>
             <li>
-              <div class="list_type_numbered__title">Принятие решения.</div>
+              <div class="list_type_numbered__title">
+                Принятие решения.
+                <img
+                  class="list_type_numbered__title-icon"
+                  src="./verified_FILL0_wght400_GRAD0_opsz24.svg"
+                  alt=""
+                />
+              </div>
               <div class="list_type_numbered__text">
                 экспертная комиссия выносит решение и уведомляет заявителя.
                 Общий срок включения в реестр – до 45 рабочих дней со дня
@@ -223,19 +277,30 @@
       <hr />
       <section id="contacts">
         <h2 class="title selected-text">Контакты</h2>
-        <div class="contacts__container">
-          <img
-            class="contacts__photo"
-            src="./Contacts.jpg"
-            alt="Девушка в деловом стиле"
-          />
-          <div class="contacts__right">
-            <span>
-              Оставьте свою заявку в Telegram
-              <a href="tg://resolve?domain=AlinaRyseva">@AlinaRyseva</a></span
-            >
-            <a href="mailto:valibyk@gmail.com">или на почту</a>
+        <div class="contacts__cards">
+          <div class="contacts__card">
+            <img
+              class="contacts__photo"
+              src="./Contacts.jpg"
+              alt="Девушка в деловом стиле"
+            />
+            <div>Алина, Директор</div>
           </div>
+          <div class="contacts__card">
+            <img
+              class="contacts__photo"
+              src="./photo_2023-12-05_14-01-48.jpg"
+              alt="Девушка в деловом стиле"
+            />
+            <div>Роман, Технический директор</div>
+          </div>
+        </div>
+        <div class="contacts__links selected-text">
+          <span>
+            Оставьте свою заявку в Telegram
+            <a href="tg://resolve?domain=AlinaRyseva">@AlinaRyseva</a></span
+          >
+          <a href="mailto:valibyk@gmail.com">или на почту</a>
         </div>
       </section>
       <hr />
@@ -244,58 +309,76 @@
         <div class="feedback__container">
           <img
             class="feedback__image"
-            src="./diploma.webp"
+            src="./Алина_Рысева_рекомендательное_письмо_НЕЙРИ_20_02_2024_ПОДПИСАННОЕ.jpg"
             alt="Благодарственное письмо"
             tabindex="0"
           />
           <div class="feedback__image-full">
-            <img src="./diploma.webp" alt="Благодарственное письмо" />
+            <img
+              src="./Алина_Рысева_рекомендательное_письмо_НЕЙРИ_20_02_2024_ПОДПИСАННОЕ.jpg"
+              alt="Благодарственное письмо"
+            />
           </div>
 
           <img
             class="feedback__image"
-            src="./diploma.webp"
+            src="./Алина_Рысева_рекомендательное_письмо_НЕЙРИ_20_02_2024_ПОДПИСАННОЕ.jpg"
             alt="Благодарственное письмо"
             tabindex="0"
           />
           <div class="feedback__image-full">
-            <img src="./diploma.webp" alt="Благодарственное письмо" />
+            <img
+              src="./Алина_Рысева_рекомендательное_письмо_НЕЙРИ_20_02_2024_ПОДПИСАННОЕ.jpg"
+              alt="Благодарственное письмо"
+            />
           </div>
           <img
             class="feedback__image"
-            src="./diploma.webp"
+            src="./Алина_Рысева_рекомендательное_письмо_НЕЙРИ_20_02_2024_ПОДПИСАННОЕ.jpg"
             alt="Благодарственное письмо"
             tabindex="0"
           />
           <div class="feedback__image-full">
-            <img src="./diploma.webp" alt="Благодарственное письмо" />
+            <img
+              src="./Алина_Рысева_рекомендательное_письмо_НЕЙРИ_20_02_2024_ПОДПИСАННОЕ.jpg"
+              alt="Благодарственное письмо"
+            />
           </div>
           <img
             class="feedback__image"
-            src="./diploma.webp"
+            src="./Алина_Рысева_рекомендательное_письмо_НЕЙРИ_20_02_2024_ПОДПИСАННОЕ.jpg"
             alt="Благодарственное письмо"
             tabindex="0"
           />
           <div class="feedback__image-full">
-            <img src="./diploma.webp" alt="Благодарственное письмо" />
+            <img
+              src="./Алина_Рысева_рекомендательное_письмо_НЕЙРИ_20_02_2024_ПОДПИСАННОЕ.jpg"
+              alt="Благодарственное письмо"
+            />
           </div>
           <img
             class="feedback__image"
-            src="./diploma.webp"
+            src="./Алина_Рысева_рекомендательное_письмо_НЕЙРИ_20_02_2024_ПОДПИСАННОЕ.jpg"
             alt="Благодарственное письмо"
             tabindex="0"
           />
           <div class="feedback__image-full">
-            <img src="./diploma.webp" alt="Благодарственное письмо" />
+            <img
+              src="./Алина_Рысева_рекомендательное_письмо_НЕЙРИ_20_02_2024_ПОДПИСАННОЕ.jpg"
+              alt="Благодарственное письмо"
+            />
           </div>
           <img
             class="feedback__image"
-            src="./diploma.webp"
+            src="./Алина_Рысева_рекомендательное_письмо_НЕЙРИ_20_02_2024_ПОДПИСАННОЕ.jpg"
             alt="Благодарственное письмо"
             tabindex="0"
           />
           <div class="feedback__image-full">
-            <img src="./diploma.webp" alt="Благодарственное письмо" />
+            <img
+              src="./Алина_Рысева_рекомендательное_письмо_НЕЙРИ_20_02_2024_ПОДПИСАННОЕ.jpg"
+              alt="Благодарственное письмо"
+            />
           </div>
         </div>
       </section>
