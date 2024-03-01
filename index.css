@@ -270,6 +270,7 @@ section {
   display: flex;
   justify-content: space-around;
   margin-bottom: 64px;
+  max-width: 100%;
 }
 
 .contacts__card {
@@ -278,21 +279,11 @@ section {
   font-weight: 400;
   text-align: center;
   color: var(--main-headers);
-}
-
-.contacts__links {
-  text-align: center;
-}
-
-.contacts__links a {
-  text-decoration: none;
-  color: rgb(75, 73, 201);
-  font-size: 24px;
+  width: 50%;
 }
 
 .contacts__photo {
-  height: 300px;
-  min-width: 300px;
+  max-width: 70%;
   border-radius: 50%;
   object-fit: cover;
   object-position: top;
@@ -345,8 +336,7 @@ section {
   font-size: 64px;
   font-family: "Oswald";
   font-weight: 600;
-  align-self: flex-end;
-  margin-right: 48px;
+  align-self: center;
 }
 
 .inverted {
@@ -398,4 +388,21 @@ section {
   font-size: 28px;
   margin-bottom: 16px;
   font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.price__icon {
+  width: 48px;
+}
+
+.price__links {
+  display: flex;
+  width: fit-content;
+  padding: 4px 24px 8px 24px;
+  font-size: 41px;
+  margin: 32px auto 0;
+}
+
+.price__link {
+  display: flex;
+  margin-left: 24px;
 }
