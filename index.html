@@ -21,7 +21,7 @@
           <span class="selected-text">обеспечения</span>
         </h1>
         <div class="advantages">
-          <h2 class="title" class="title">Получите преимущества:</h2>
+          <h2 class="title">Получите преимущества:</h2>
           <ul class="list">
             <li>налоговые льготы</li>
             <li>грантовую государственную поддержку</li>
@@ -53,14 +53,66 @@
             </li>
           </ul>
           <div class="navigation__right">
-            Напишите нам:
-            <a class="navigation__icon" href="tg://resolve?domain=AlinaRyseva">
+            <a
+              class="navigation__link"
+              href="tg://resolve?domain=AlinaRyseva"
+              target="_blank"
+            >
               <img src="./Logo.svg" alt="Telegram"
             /></a>
-            <a class="navigation__icon" href="mailto:valibyk@gmail.com">
+            <a
+              class="navigation__link"
+              href="mailto:valibyk@gmail.com"
+              target="_blank"
+            >
               <img src="./email.svg" alt="Telegram"
             /></a>
           </div>
+        </nav>
+        <div class="header_mobile">
+          <img
+            class="burger"
+            src="./menu_FILL0_wght400_GRAD0_opsz24.svg"
+            alt=""
+            tabindex="0"
+          />
+          <div>
+            <a
+              class="navigation__link"
+              href="tg://resolve?domain=AlinaRyseva"
+              target="_blank"
+            >
+              <img class="navigation__icon" src="./Logo.svg" alt="Telegram"
+            /></a>
+            <a
+              class="navigation__link"
+              href="mailto:valibyk@gmail.com"
+              target="_blank"
+            >
+              <img class="navigation__icon" src="./email.svg" alt="Telegram"
+            /></a>
+          </div>
+        </div>
+        <nav class="navigation_mobile">
+          <ul class="list">
+            <li class="navigation__element">
+              <a class="navigation__element-link" href="#todo">Что делаем</a>
+            </li>
+            <li class="navigation__element">
+              <a class="navigation__element-link" href="#plan">
+                План действий
+              </a>
+            </li>
+            <li class="navigation__element">
+              <a class="navigation__element-link" href="#price">Цены</a>
+            </li>
+            <li class="navigation__element">
+              <a class="navigation__element-link" href="#contacts">Контакты</a>
+            </li>
+            <li class="navigation__element">
+              <a class="navigation__element-link" href="#feedback">Отзывы</a>
+            </li>
+          </ul>
         </nav>
       </section>
       <section id="todo" class="todo-section inverted">
@@ -279,7 +331,7 @@
         <span class="price">Итого: 50 000 рублей</span>
 
         <div class="price__links selected-text">
-          Оставьте свою заявку:
+          <span class="price__text">Оставьте свою заявку:</span>
           <a
             class="price__link"
             href="tg://resolve?domain=AlinaRyseva"
@@ -398,3 +450,20 @@
     </main>
   </body>
 </html>
+
+<script type="text/javascript">
+  const burger = document.querySelector(".burger");
+  const menu = document.querySelector(".navigation_mobile");
+
+  burger.addEventListener("click", (e) => {
+    e.stopPropagation();
+    menu.setAttribute("display", "block");
+    menu.classList.add("show");
+  });
+
+  document.querySelector("html").addEventListener("click", (e) => {
+    if (menu.classList.contains("show")) {
+      menu.classList.remove("show");
+    }
+  });
+</script>

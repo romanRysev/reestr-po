@@ -29,7 +29,7 @@ body {
 
 .title {
   font-size: 24px;
-  color: black;
+  color: var(--main-headers);
   font-family: oswald;
   line-height: 1.2;
 }
@@ -56,7 +56,6 @@ section {
 /* --- sections --- */
 
 .main-screen-section {
-  height: 100vh;
   padding-top: 54px;
   margin-top: 0;
   box-sizing: border-box;
@@ -77,9 +76,8 @@ section {
 }
 
 .advantages {
-  background-color: rgba(248, 248, 255, 0.774);
+  background-color: rgba(255, 255, 255, 0.774);
   padding: 12px 32px 16px 32px;
-  margin-left: -32px;
   width: fit-content;
   box-shadow: var(--main-shadow);
 }
@@ -89,6 +87,7 @@ section {
   padding: 8px;
   width: fit-content;
   margin: 4px;
+  color: var(--main-headers);
 }
 
 .plan {
@@ -228,12 +227,15 @@ section {
   display: flex;
   justify-content: center;
   margin: 0;
-  padding: 0 2%;
-  width: inherit;
+  width: 70%;
+}
+
+.navigation__link {
+  margin-left: 24px;
 }
 
 .navigation__icon {
-  margin-left: 24px;
+  width: 24px;
 }
 
 .navigation__element {
@@ -398,6 +400,7 @@ section {
 .price__links {
   display: flex;
   width: fit-content;
+  max-width: 100%;
   padding: 4px 24px 8px 24px;
   font-size: 41px;
   margin: 32px auto 0;
@@ -408,8 +411,71 @@ section {
   margin-left: 24px;
 }
 
-@media screen and (max-width: 600px) {
+.burger {
+  display: none;
+}
+
+.navigation_mobile {
+  display: none;
+  position: absolute;
+}
+
+.header_mobile {
+  width: 100vw;
+  background-color: var(--main-headers);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 998;
+  display: flex;
+  padding: 6px 32px 6px 12px;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 640px) {
   .list_type_numbered {
     padding: 0;
+  }
+
+  .burger {
+    display: block;
+    width: 32px;
+    height: 32px;
+  }
+
+  .navigation_mobile {
+    position: fixed;
+    top: 32px;
+    left: 0;
+    background-color: var(--main-headers);
+    z-index: 999;
+  }
+
+  .navigation_mobile ul {
+    padding: 0 0 0 16px;
+  }
+
+  .navigation__element {
+    width: 100%;
+    text-align: left;
+    padding-right: 16px;
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  .show {
+    display: block;
+  }
+
+  .price__text {
+    font-size: 24px;
+  }
+
+  .price {
+    font-size: 32px;
   }
 }
