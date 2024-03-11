@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Внесение ПО в реестр Отечественного программного обеспечения</title>
+    <title>Внесение ПО в реестр Российского программного обеспечения.</title>
     <link rel="stylesheet" type="text/css" href="index.css" media="screen" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,11 +13,11 @@
     />
   </head>
   <body>
-    <main>
+    <main id="main">
       <section class="main-screen-section">
         <h1 class="title main-screen-section__title">
           <span class="selected-text">Внесение ПО в реестр</span>
-          <span class="selected-text">Отечественного программного</span>
+          <span class="selected-text">Российского программного</span>
           <span class="selected-text">обеспечения</span>
         </h1>
         <div class="advantages">
@@ -35,7 +35,10 @@
         <nav class="navigation">
           <ul class="list">
             <li class="navigation__element">
-              <a class="navigation__element-link" href="#todo">Что делаем</a>
+              <a class="navigation__element-link" href="#main">Преимущества</a>
+            </li>
+            <li class="navigation__element">
+              <a class="navigation__element-link" href="#todo">Услуги</a>
             </li>
             <li class="navigation__element">
               <a class="navigation__element-link" href="#plan">
@@ -43,10 +46,10 @@
               </a>
             </li>
             <li class="navigation__element">
-              <a class="navigation__element-link" href="#price">Цены</a>
+              <a class="navigation__element-link" href="#price">Стоимость</a>
             </li>
             <li class="navigation__element">
-              <a class="navigation__element-link" href="#contacts">Контакты</a>
+              <a class="navigation__element-link" href="#contacts">Команда</a>
             </li>
             <li class="navigation__element">
               <a class="navigation__element-link" href="#feedback">Отзывы</a>
@@ -96,7 +99,10 @@
         <nav class="navigation_mobile">
           <ul class="list">
             <li class="navigation__element">
-              <a class="navigation__element-link" href="#todo">Что делаем</a>
+              <a class="navigation__element-link" href="#main">Преимущества</a>
+            </li>
+            <li class="navigation__element">
+              <a class="navigation__element-link" href="#todo">Услуги</a>
             </li>
             <li class="navigation__element">
               <a class="navigation__element-link" href="#plan">
@@ -104,10 +110,10 @@
               </a>
             </li>
             <li class="navigation__element">
-              <a class="navigation__element-link" href="#price">Цены</a>
+              <a class="navigation__element-link" href="#price">Стоимость</a>
             </li>
             <li class="navigation__element">
-              <a class="navigation__element-link" href="#contacts">Контакты</a>
+              <a class="navigation__element-link" href="#contacts">Команда</a>
             </li>
             <li class="navigation__element">
               <a class="navigation__element-link" href="#feedback">Отзывы</a>
@@ -116,33 +122,34 @@
         </nav>
       </section>
       <section id="todo" class="todo-section inverted">
-        <h2 class="title selected-text">Что сделаем</h2>
+        <h2 class="title selected-text">Услуги</h2>
         <img
           src="./verified_FILL0_wght400_GRAD0_opsz24.svg"
           class="todo-background-img"
           alt=""
         />
-        <ul class="">
+        <ol class="">
           <li>
-            Расскажем как происходит включение в реестр: порядок, сроки,
+            Расскажем, как происходит включение в реестр: порядок, сроки,
             требования, документы.
           </li>
           <li>
-            Проведем проверку вашей документации на соответствие требованиям.
-            Укажем на проблемные моменты, исправим или дополним. Если у вас нет
-            документации, то часть документации мы подготовим самостоятельно. А
-            часть подготовим по дополнительной оплате (в зависимости от
-            сложности ПО).
+            Разберемся с документацией по вашему ПО:
+            <ul>
+              <li>Если документация есть: проверим, исправим или дополним.</li>
+              <li>Если документации нет: дадим шаблоны или сделаем сами.</li>
+            </ul>
           </li>
-          <li>Подготовим и направим заявление.</li>
+          <li>Расскажем, как подготовить проверочный экземпляр ПО.</li>
+          <li>Подготовим и отправим заявление и сопутствующие документы.</li>
           <li>Возьмем на себя всю коммуникацию с представителями Реестра.</li>
-        </ul>
+        </ol>
       </section>
       <section id="plan">
         <h2 class="title selected-text">План действий</h2>
         <div class="plan">
           <ol class="list list_type_numbered">
-            <li>
+            <li class="list_type_numbered__el">
               <div class="list_type_numbered__card">
                 <div class="list_type_numbered__title">
                   Первый контакт
@@ -153,15 +160,15 @@
                   />
                 </div>
                 <div class="list_type_numbered__text">
-                  Свяжитесь с нами. Расскажите о вашем ПО. Мы расскажем как
-                  происходит процедура регистрации.
+                  Расскажите о вашем ПО. Мы расскажем, как происходит процедура
+                  регистрации.
                 </div>
               </div>
             </li>
-            <li>
+            <li class="list_type_numbered__el">
               <div class="list_type_numbered__card">
                 <div class="list_type_numbered__title">
-                  Проверка технического соответствия ПО.
+                  Проверка технического соответствия.
                   <img
                     class="list_type_numbered__title-icon"
                     src="./check.svg"
@@ -174,10 +181,10 @@
                 </div>
               </div>
             </li>
-            <li>
+            <li class="list_type_numbered__el">
               <div class="list_type_numbered__card">
                 <div class="list_type_numbered__title">
-                  Сбор информации о ПО и необходимых документов.
+                  Сбор информации и необходимых документов.
                   <img
                     class="list_type_numbered__title-icon"
                     src="./doc.svg"
@@ -185,15 +192,22 @@
                   />
                 </div>
                 <div class="list_type_numbered__text">
-                  Вы заполняете анкету с информацией о ПО (используемые
-                  технологии, цели, задачи, требования к установке и прочее); -
-                  Мы подскажем и при необходимости покажем какие юридические
-                  документы необходимо вам подготовить. - Мы подскажем и покажем
-                  какие дополнительные документы необходимо предоставить.
+                  <ul>
+                    <li>
+                      Вы заполняете анкету с информацией о ПО (используемые
+                      технологии, цели, задачи, требования к установке и
+                      прочее);
+                    </li>
+                    <li>
+                      Мы покажем какие юридические документы необходимо вам
+                      подготовить;
+                    </li>
+                    <li>Мы поможем собрать дополнительные документы.</li>
+                  </ul>
                 </div>
               </div>
             </li>
-            <li class="long">
+            <li class="list_type_numbered__el long">
               <div class="list_type_numbered__card">
                 <div class="list_type_numbered__title">
                   Подготовка документации.
@@ -204,19 +218,24 @@
                   />
                 </div>
                 <div class="list_type_numbered__text">
-                  Если документация есть: мы проверим на соответствие
-                  требованиям Минцифр, при необходимости поправим и дополним; -
-                  Если документации нет: мы подготовим описание процессов
-                  обеспечивающих поддержание жизненного цикла ПО и расскажем как
-                  подготовить описание функциональных характеристик и инструкцию
-                  по эксплуатации. (По договоренности и дополнительной оплате,
-                  мы можем подготовить за вас описание функциональных
-                  характеристик. Стоимость зависит от сложности вашего ПО,
-                  средняя стоимость 15 000 рублей).
+                  <ul>
+                    <li>
+                      Если документация есть: проверим соответствие методическим
+                      требованиям, поправим и дополним;
+                    </li>
+                    <li>
+                      Если документации нет: подготовим описание процессов,
+                      обеспечивающих поддержание жизненного цикла ПО, и
+                      расскажем, как подготовить остальные документы.
+                    </li>
+                  </ul>
+                  По договоренности за дополнительную плату мы можем подготовить
+                  за вас описание функциональных характеристик и инструкцию по
+                  эксплуатации.
                 </div>
               </div>
             </li>
-            <li>
+            <li class="list_type_numbered__el">
               <div class="list_type_numbered__card">
                 <div class="list_type_numbered__title">
                   Подготовка проверочного экземпляра.
@@ -227,12 +246,19 @@
                   />
                 </div>
                 <div class="list_type_numbered__text">
-                  Мы подскажем как подготовить проверочный экземпляр; - Вам
-                  необходимо подготовить инструкцию по установке ПО.
+                  <ul>
+                    <li>
+                      Мы подскажем, как подготовить проверочный экземпляр;
+                    </li>
+                    <li>
+                      Вам необходимо будет подготовить инструкцию по установке
+                      ПО.
+                    </li>
+                  </ul>
                 </div>
               </div>
             </li>
-            <li>
+            <li class="list_type_numbered__el">
               <div class="list_type_numbered__card">
                 <div class="list_type_numbered__title">
                   Подача заявления.
@@ -247,7 +273,7 @@
                 </div>
               </div>
             </li>
-            <li>
+            <li class="list_type_numbered__el">
               <div class="list_type_numbered__card">
                 <div class="list_type_numbered__title">
                   Регистрация заявления.
@@ -258,13 +284,19 @@
                   />
                 </div>
                 <div class="list_type_numbered__text">
-                  Минцифры проверяет полноту предоставленных документов; - Мы
-                  отслеживаем статус заявления и при необходимости вносим
-                  правки.
+                  <ul>
+                    <li>
+                      5 рабочих дней на проверку предоставленных документов;
+                    </li>
+                    <li>
+                      Мы отслеживаем статус заявления, при необходимости вносим
+                      правки.
+                    </li>
+                  </ul>
                 </div>
               </div>
             </li>
-            <li>
+            <li class="list_type_numbered__el">
               <div class="list_type_numbered__card">
                 <div class="list_type_numbered__title">
                   Экспертная оценка.
@@ -275,14 +307,21 @@
                   />
                 </div>
                 <div class="list_type_numbered__text">
-                  Экспертная комиссия изучает предоставленный экземпляр ПО Мы
-                  отслеживаем статус, при необходимости отвечаем на вопросы или
-                  организовываем демонстрацию вашего ПО. Участвуем в
-                  демонстрации в качестве модератора.
+                  <ul>
+                    <li>
+                      Экспертная комиссия изучает предоставленный экземпляр ПО и
+                      документацию;
+                    </li>
+                    <li>
+                      Мы отслеживаем статус, при необходимости отвечаем на
+                      вопросы или организовываем демонстрацию вашего ПО.
+                      Участвуем в демонстрации в качестве модератора.
+                    </li>
+                  </ul>
                 </div>
               </div>
             </li>
-            <li>
+            <li class="list_type_numbered__el">
               <div class="list_type_numbered__card">
                 <div class="list_type_numbered__title">
                   Принятие решения.
@@ -293,9 +332,16 @@
                   />
                 </div>
                 <div class="list_type_numbered__text">
-                  экспертная комиссия выносит решение и уведомляет заявителя.
-                  Общий срок включения в реестр – до 45 рабочих дней со дня
-                  регистрации заявления.
+                  <ul>
+                    <li>
+                      экспертная комиссия выносит решение и уведомляет
+                      заявителя.
+                    </li>
+                    <li>
+                      Общий срок включения в реестр – до 45 рабочих дней со дня
+                      регистрации заявления.
+                    </li>
+                  </ul>
                 </div>
               </div>
             </li>
@@ -308,27 +354,41 @@
           class="price-section-background-img"
           alt=""
         />
-        <h2 class="title selected-text">Цены</h2>
+        <h2 class="title selected-text">Стоимость</h2>
+        <h3>Полное сопровождение проекта по включению вашего ПО в реестр:</h3>
+
         <ol class="">
-          <li>
-            Консультация, инструктаж по сбору документов и справок, подготовке
-            проверочного экземпляра.
-          </li>
-          <li>Проверка документации, при необходимости правка.</li>
-          <li>
-            Частичная подготовка документации (описание процессов обеспечивающих
-            поддержание жизненного цикла ПО).
-          </li>
-          <li>Подготовка и подача заявления и пакета документов.</li>
+          <li>Консультация по процессу включения в реестр.</li>
+          <li>Проверка документации, правка и дополнение.</li>
+          <li>Подготовка и подача заявления сопутствующих документов.</li>
           <li>Коммуникация с представителями реестра.</li>
-          <li>Организация демонстрации ПО (при необходимости)</li>
-          <li>
-            Мы можем подготовить для вас описание функциональных характеристик.
-            Стоимость зависит от сложности вашего ПО. (В среднем + 15 000
-            рублей).
-          </li>
+          <li>Организация демонстрации вашего ПО (при необходимости)</li>
         </ol>
-        <span class="price">Итого: 50 000 рублей</span>
+        <span class="price">50 000 рублей</span>
+
+        <h3>Дополнительные услуги:</h3>
+        <span
+          >подготовка документации (описание функциональных характеристик,
+          инструкция по эксплуатации)</span
+        >
+
+        <span
+          >Стоимость зависит от сложности вашего ПО, в среднем 15 000
+          рублей</span
+        >
+
+        <h3>Порядок оплаты:</h3>
+
+        <ol>
+          <li>
+            Этап «Консультация» - 5 000 рублей. Оплата осуществляется
+            непосредственно перед консультацией. Если вы решите заключать
+            договор, то стоимость входит в стоимость услуг.
+          </li>
+          <li>Этап «Предоплата» - 15 000 рублей.</li>
+          <li>Этап «Подача заявления» - 25 000 рублей</li>
+          <li>Этап «Получение решения» - 5 000 рублей.</li>
+        </ol>
 
         <div class="price__links selected-text">
           <span class="price__text">Оставьте свою заявку:</span>
@@ -349,7 +409,7 @@
         </div>
       </section>
       <section id="contacts">
-        <h2 class="title selected-text">О нас</h2>
+        <h2 class="title selected-text">Команда</h2>
         <div class="contacts__cards">
           <div class="contacts__card">
             <img
@@ -368,6 +428,15 @@
             <div>Роман, Технический директор</div>
           </div>
         </div>
+
+        <h3>Наши ключевые преимущества:</h3>
+
+        <ol>
+          <li>Полное сопровождение вашего проекта.</li>
+          <li>Помощь в подготовке документации.</li>
+          <li>Оперативность и отсутствие бюрократии.</li>
+          <li>Прозрачность стоимости и возможность платить этапами.</li>
+        </ol>
       </section>
       <section id="feedback" class="feedback inverted">
         <h2 class="title selected-text">Отзывы</h2>
@@ -387,63 +456,22 @@
 
           <img
             class="feedback__image"
-            src="./Алина_Рысева_рекомендательное_письмо_НЕЙРИ_20_02_2024_ПОДПИСАННОЕ.jpg"
+            src="./Письмо ООО Мартех.jpg"
             alt="Благодарственное письмо"
             tabindex="0"
           />
           <div class="feedback__image-full">
-            <img
-              src="./Алина_Рысева_рекомендательное_письмо_НЕЙРИ_20_02_2024_ПОДПИСАННОЕ.jpg"
-              alt="Благодарственное письмо"
-            />
+            <img src="./Письмо ООО Мартех.jpg" alt="Благодарственное письмо" />
           </div>
+
           <img
             class="feedback__image"
-            src="./Алина_Рысева_рекомендательное_письмо_НЕЙРИ_20_02_2024_ПОДПИСАННОЕ.jpg"
+            src="./ООО 12.jpg"
             alt="Благодарственное письмо"
             tabindex="0"
           />
           <div class="feedback__image-full">
-            <img
-              src="./Алина_Рысева_рекомендательное_письмо_НЕЙРИ_20_02_2024_ПОДПИСАННОЕ.jpg"
-              alt="Благодарственное письмо"
-            />
-          </div>
-          <img
-            class="feedback__image"
-            src="./Алина_Рысева_рекомендательное_письмо_НЕЙРИ_20_02_2024_ПОДПИСАННОЕ.jpg"
-            alt="Благодарственное письмо"
-            tabindex="0"
-          />
-          <div class="feedback__image-full">
-            <img
-              src="./Алина_Рысева_рекомендательное_письмо_НЕЙРИ_20_02_2024_ПОДПИСАННОЕ.jpg"
-              alt="Благодарственное письмо"
-            />
-          </div>
-          <img
-            class="feedback__image"
-            src="./Алина_Рысева_рекомендательное_письмо_НЕЙРИ_20_02_2024_ПОДПИСАННОЕ.jpg"
-            alt="Благодарственное письмо"
-            tabindex="0"
-          />
-          <div class="feedback__image-full">
-            <img
-              src="./Алина_Рысева_рекомендательное_письмо_НЕЙРИ_20_02_2024_ПОДПИСАННОЕ.jpg"
-              alt="Благодарственное письмо"
-            />
-          </div>
-          <img
-            class="feedback__image"
-            src="./Алина_Рысева_рекомендательное_письмо_НЕЙРИ_20_02_2024_ПОДПИСАННОЕ.jpg"
-            alt="Благодарственное письмо"
-            tabindex="0"
-          />
-          <div class="feedback__image-full">
-            <img
-              src="./Алина_Рысева_рекомендательное_письмо_НЕЙРИ_20_02_2024_ПОДПИСАННОЕ.jpg"
-              alt="Благодарственное письмо"
-            />
+            <img src="./ООО 12.jpg" alt="Благодарственное письмо" />
           </div>
         </div>
       </section>
